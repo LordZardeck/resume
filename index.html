@@ -200,7 +200,24 @@
 					display: block;
 				}
 			}
+
+			@-webkit-viewport   { width: device-width; }
+			@-moz-viewport      { width: device-width; }
+			@-ms-viewport       { width: device-width; }
+			@-o-viewport        { width: device-width; }
+			@viewport           { width: device-width; }
 		</style>
+		<script type="text/javascript">
+			if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			  var msViewportStyle = document.createElement('style')
+			  msViewportStyle.appendChild(
+			    document.createTextNode(
+			      '@-ms-viewport{width:auto!important}'
+			    )
+			  )
+			  document.querySelector('head').appendChild(msViewportStyle)
+			}
+		</script>
 	</head>
 	<body class="clearfix">
 		<aside class="clearfix">
