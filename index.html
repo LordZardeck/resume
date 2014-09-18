@@ -1,0 +1,363 @@
+<html>
+	<head>
+		<title></title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+			* {
+				box-sizing: border-box;
+			}
+			img.profile-pic {
+			    width: 50%;
+			}
+			section#title {
+			    text-align: center;
+			    margin-bottom: 40px;
+			    text-transform: uppercase;
+			}
+			aside {
+			    width: 400px;
+			    position: absolute;
+			    background: #2C3E4F; 
+			    color: #fff; 
+			    padding: 30px; 
+			    height: 100%;
+			}
+			body {
+			    width: 1280px; 
+			    margin: 0 auto; 
+			    font-family: 'Open Sans', sans-serif;
+			    position: relative;
+			}
+			h1.name {
+			    font-size: 2em;
+			    font-weight: 100;
+			    margin: 20px 0 5px;
+			}
+			span.accent {
+			    font-weight: bold;
+			}
+			h4.job-title {
+			    margin: 5px 0;
+			    font-weight: 100;
+			}
+			h2 {
+			    text-transform: uppercase;
+			}
+			#profile p {
+			    font-size: 13px;
+			    margin-left: 20px;
+			}
+			section#content { 
+			    margin-left: 400px;
+			    padding: 30px;
+			    background-color: #F3F2F2;
+			}
+			li.web a {
+			    color: #fff;
+			    text-decoration: none;
+			    display: block;
+			}
+			li.location p {
+			    margin: 0;
+			}
+			#contact ul li {
+			    padding: 5px 0;
+			}
+			#contact ul li > span {
+			    display: inline-block;
+			    vertical-align: middle;
+			}
+			#professional-skills li {
+			    padding: 10px 0;
+			    text-transform: uppercase;
+			    font-size: 13px;
+			}
+
+			#content [class^="progress-"] {
+				border-color: #2C3E4F;
+				margin: 4px 0;
+			}
+			#content [class^="progress-"]:before {
+				background-color: #2C3E4F;
+			}
+
+			#personal-skills li, #proficiency li {
+			    display: inline-block;
+			    width: 50%;
+			    float: left;
+			}
+
+			#personal-skills li:nth-child(2n), #proficiency li:nth-child(2n) {
+			    padding-left: 25px;
+			}
+
+			#personal-skills li:nth-child(2n-1), #proficiency li:nth-child(2n-1) {
+			    padding-right: 25px;
+			}
+
+			.clearfix:after {
+				clear: both;
+				display: table;
+				content: " ";
+			}
+
+			[class^="progress-"] {
+			    width: 100px;
+			    height: 10px;
+			    border: 1px solid #fff;
+			    display: inline-block;
+			    border-radius: 4px;
+			    vertical-align: -1px;
+			    float: right;
+			}
+			[class^="progress-"]:before {
+			    display: block;
+			    content: " ";
+			    background: #fff;
+			    width: 0%;
+			    height: 100%;
+			}
+			.progress-10:before {
+				width: 10%;
+			}
+			.progress-20:before {
+				width: 20%;	
+			}
+			.progress-30:before {
+				width: 30%;
+			}
+			.progress-40:before {
+				width: 40%;
+			}
+			.progress-50:before {
+				width: 50%;
+			}
+			.progress-60:before {
+				width: 60%;
+			}
+			.progress-70:before {
+				width: 70%;
+			}
+			.progress-80:before {
+				width: 80%;
+			}
+			.progress-90:before {
+				width: 90%;
+			}
+			.progress-100:before {
+				width: 100%;
+			}
+			article.job h4, article.project h4 {
+			    margin-bottom: 0;
+			    text-transform: uppercase;
+			    font-weight: 100;
+			}
+			span.company, span.project-name {
+			    color: #2C3E4F;
+			}
+			span.work-period, span.project-period {
+			    color: #777;
+			}
+			article.job p, article.project p {
+			    margin: 3px 0;
+			    color: #444;
+			}
+			#work-experience li, #projects li {
+			    margin-bottom: 20px;
+			}
+			span.lead {
+			    color: #111;
+			}
+		</style>
+	</head>
+	<body class="clearfix">
+		<aside class="clearfix">
+			<section id="title">
+				<img class="profile-pic" src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/p720x720/523068_3928545846777_1691038112_n.jpg?oh=0722d12470c86bf57496cffce43e89e3&oe=548A1155&__gda__=1422953918_8ca3acaf31fd2df52a5d5b26aa1f5d0e">
+				<h1 class="name">Sean <span class="accent">C. Templeton</span></h1>
+				<h4 class="job-title">Front-End Web Developer</h4>
+			</section>
+			<article id="profile">
+				<h2>Profile</h2>
+				<p>
+					I'm a 22 year old Web Developer that has been developing web applications since I was 15. 
+					I'm a technology enthusiast with a love for all things Web. I was home schooled throughout 
+					my middle and high school years, self-teaching myself everything I know. I am married to 
+					my beautiful, loving wife, Ashton Templeton, whom without, my life would just be a long 
+					string of meaningless code.
+				</p>
+			</article>
+			<section id="contact">
+				<h2>Contact Me</h2>
+				<ul>
+					<li class="phone">
+						<span>(417) 413-3473</span>
+					</li>
+					<li class="web">
+						<span>
+							<a href="http://lordzardeck.com">LordZardeck.com</a>
+							<a href="mailto:sean@blackfireweb.com">sean@blackfireweb.com</a>
+						</span>	
+					</li>
+				</ul>
+			</section>
+			<section id="professional-skills">
+				<h2>Professional Skills</h2>
+				<ul>
+					<li>
+						<span>Interface Design</span>
+						<div class="progress-80"></div>
+					</li>
+					<li>
+						<span>Code Structure</span>
+						<div class="progress-70"></div>
+					</li>
+					<li>
+						<span>Bus. Oriented</span>
+						<div class="progress-90"></div>
+					</li>
+					<li>
+						<span>Goal Driven</span>
+						<div class="progress-70"></div>
+					</li>
+				</ul>
+			</section>
+		</aside>
+
+		<section id="content" class="clearfix">
+			<section id="work-experience">
+				<h2>Work Experience</h2>
+				<ul>
+					<li>
+						<article class="job">
+							<h4>
+								<span class="company">Pushup Social</span> /
+								<span class="work-period">Dec 2013 - Current</span>
+							</h4>
+							<p>
+								<span class="lead">Lead Front-End Developer in Saint Louis, MO:</span>
+								Architected custom framework, discussed business goals and translated 
+								them into user stores, trained new hires on company software stack.
+							</p>
+						</article>
+					</li>					
+					<li>
+						<article class="job">
+							<h4>
+								<span class="company">Freelance</span> /
+								<span class="work-period">Mar 2013 - Dec 2013</span>
+							</h4>
+							<p>
+								<span class="lead">Web Developer in Springfield, MO:</span>
+								Designed sites for Cabin rental company and presonal life coach, improved 
+								secured retail shopping platoform, developed jQuery quiz plugin for
+								foster care site.
+							</p>
+						</article>
+					</li>
+					<li>
+						<article class="job">
+							<h4>
+								<span class="company">Blackfire Development</span> /
+								<span class="work-period">Jun 2007 - Current</span>
+							</h4>
+							<p>
+								<span class="lead">Owner/ Web Developer:</span>
+								Developed custom library administration software, managed basic lamp stack 
+								server, trained end-users on custom product.
+							</p>
+						</article>
+					</li>
+				</ul>
+			</section>
+			<section id="personal-skills">
+				<h2>Personal Skills</h2>
+				<ul class="clearfix">
+					<li>
+						<span>Creative</span>
+						<div class="progress-60"></div>
+					</li>
+					<li>
+						<span>Innovative</span>
+						<div class="progress-90"></div>
+					</li>
+					<li>
+						<span>Team Work</span>
+						<div class="progress-60"></div>
+					</li>
+					<li>
+						<span>Self-Driven</span>
+						<div class="progress-90"></div>
+					</li>
+				</ul>
+			</section>
+			<section id="projects">
+				<h2>Projects</h2>
+				<ul>
+					<li>
+						<article class="project">
+							<h4>
+								<span class="project-name">Windows Phone Application</span> /
+								<span class="project-period">50 Hours</span>
+							</h4>
+							<p>
+								<span class="lead">Pushup Social:</span>
+								Single-handely developed C# Windows Phone mobile app for social networking
+								company without prior mobile development experience. Took a total of 50
+								hours of development from concept to deployment.
+							</p>
+						</article>
+					</li>
+					<li>
+						<article class="project">
+							<h4>
+								<span class="project-name">Library Administration Console</span> /
+								<span class="project-period">Ongoing</span>
+							</h4>
+							<p>
+								<span class="lead">Black Fire Development:</span>
+								Soley developed single-page application involving a wide range of technologies.
+								Discussed requirements with customers and built around those requirements. Also
+								managed server stack and trained customers upon application deployment.
+							</p>
+						</article>
+					</li>
+					<li>
+						<article class="project">
+							<h4>
+								<span class="project-name">CakePHP Plugin</span> /
+								<span class="project-period">3 Months</span>
+							</h4>
+							<p>
+								<span class="lead">Personal:</span>
+								Developed JavaScript engine for Dojo toolkit with CakePHP. Inteded use was to have
+								JavaScript UI controls easily embedded in PHP applications in similarity to ASP.NET.
+							</p>
+						</article>
+					</li>
+				</ul>
+			</section>
+			<section id="proficiency">
+				<h2>Proficiency</h2>
+				<ul class="clearfix">
+					<li>
+						<span>JavaScript</span>
+						<div class="progress-90"></div>
+					</li>
+					<li>
+						<span>HTML5</span>
+						<div class="progress-60"></div>
+					</li>
+					<li>
+						<span>PHP</span>
+						<div class="progress-70"></div>
+					</li>
+					<li>
+						<span>CSS3</span>
+						<div class="progress-80"></div>
+					</li>
+				</ul>
+			</section>
+		</section>
+	</body>
+</html>
