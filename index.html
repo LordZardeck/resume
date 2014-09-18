@@ -23,7 +23,8 @@
 			    height: 100%;
 			}
 			body {
-			    width: 1280px; 
+			    max-width: 1280px; 
+			    width: 100%;
 			    margin: 0 auto; 
 			    font-family: 'Open Sans', sans-serif;
 			    position: relative;
@@ -167,6 +168,37 @@
 			}
 			span.lead {
 			    color: #111;
+			}
+
+			@media (max-width: 1280px) {
+				aside {
+					width: 100%;
+					position: static;
+					height: auto;
+				}
+
+				img.profile-pic {
+					max-width: 100%;
+					width: 200px;
+				}
+
+				#profile, #contact, #professional-skills {
+					max-width: 600px;
+					width: 100%;
+					margin: 0 auto;
+				}
+
+				section#content { 
+				    margin-left: 0;
+				}
+
+				#content [class^="progress-"] {
+				    float: none;
+				}
+
+				#personal-skills li span, #proficiency li span {
+					display: block;
+				}
 			}
 		</style>
 	</head>
