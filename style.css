@@ -1,6 +1,10 @@
 * {
 	box-sizing: border-box;
 }
+a {
+    color: #fff;
+    text-decoration: none;
+}
 img.profile-pic {
     width: 50%;
 }
