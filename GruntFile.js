@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     gtx.config(gruntConfig);
 
     // We need our bower components in order to develop
-    gtx.alias('build', ['less:app', 'processhtml:dist', 'htmlmin:dist']);
+    gtx.alias('build', ['less:app', 'htmlbuild:dev', 'htmlmin:dist']);
 
     gtx.finalise();
 }
