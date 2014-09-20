@@ -56,6 +56,10 @@ h2 {
     padding: 30px;
     background-color: #F3F2F2;
 
+    a {
+        color: @primary-color;
+    }
+
     & > section {
         border: 1px solid transparent;
         border-bottom: 1px solid #bbb;
@@ -95,26 +99,30 @@ li.location p {
     }
 }
 
-#personal-skills li, #proficiency li {
-    display: inline-block;
-    width: 50%;
-    float: left;
+ul.stats {
+    .clearfix;
+
+    & > li {
+        display: inline-block;
+        width: 50%;
+        float: left;
+
+        &:nth-child(2n) {
+            padding-left: 25px;
+        }
+
+        &:nth-child(2n-1) {
+            padding-right: 25px;
+        }
+    }
 }
 
-#personal-skills, #proficiency {
-    & li:nth-child(2n) {
-        padding-left: 25px;
+.clearfix {
+    &:after {
+        clear: both;
+        display: table;
+        content: " ";
     }
-
-    & li:nth-child(2n-1) {
-        padding-right: 25px;
-    }
-}
-
-.clearfix:after {
-	clear: both;
-	display: table;
-	content: " ";
 }
 
 [class^="progress-"] {
@@ -255,7 +263,7 @@ span.lead {
 	    float: none;
 	}
 
-	#personal-skills li span, #proficiency li span {
+	.stats li span {
 		display: block;
 	}
 }
