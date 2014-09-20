@@ -24,6 +24,32 @@ aside {
     padding: 30px; 
     height: 100%;
 }
+
+#profile, #contact, #professional-skills {
+    position: relative;
+
+    &:before {
+        content: " ";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        top: 35px;
+        border-top: 6px solid #fff;
+    }
+
+    & > h2 {
+        float: left;
+        background-color: @primary-color;
+        padding-right: 30px;
+        position: relative;
+        z-index: 2;
+    }
+
+    & > p, & > ul {
+        clear: both;
+    }
+}
+
 body {
     max-width: 1280px; 
     width: 100%;
