@@ -12,10 +12,11 @@ module.exports = {
 					title: 'tmpl/sidebar/title.html'
 				},
 				content: {
-					workExperience: 'tmpl/content/work-experience.html',
-					personalSkills: 'tmpl/content/personal-skills.html',
-					projects: 'tmpl/content/projects.html',
-					proficiency: 'tmpl/content/proficiency.html'
+					workExperience: 'tmpl/content/work-experience/*',
+					personalSkills: 'tmpl/content/personal-skills/*',
+					projects: 'tmpl/content/projects/*',
+					proficiency: 'tmpl/content/proficiency/*',
+					jobDetails: 'tmpl/content/job-details/*'
 				}
 			}
 		}
