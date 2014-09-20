@@ -1,3 +1,6 @@
+@import "variables";
+@import "fonts";
+
 * {
 	box-sizing: border-box;
 }
@@ -16,7 +19,7 @@ section#title {
 aside {
     width: 400px;
     position: absolute;
-    background: #660000; 
+    background: @primary-color; 
     color: #fff; 
     padding: 30px; 
     height: 100%;
@@ -74,11 +77,11 @@ li.location p {
 }
 
 #content [class^="progress-"] {
-	border-color: #660000;
+	border-color: @primary-color;
 	margin: 4px 0;
 }
 #content [class^="progress-"]:before {
-	background-color: #660000;
+	background-color: @primary-color;
 }
 
 #personal-skills li, #proficiency li {
@@ -147,13 +150,14 @@ li.location p {
 .progress-100:before {
 	width: 100%;
 }
+
 article.job h4, article.project h4 {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 100;
 }
 span.company, span.project-name {
-    color: #660000;
+    color: @primary-color;
 }
 span.work-period, span.project-period {
     color: #777;
