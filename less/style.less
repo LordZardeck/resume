@@ -1,9 +1,11 @@
 @import "variables";
 @import "fonts";
+@import "progress";
 
 * {
 	box-sizing: border-box;
 }
+
 a {
     color: #fff;
     text-decoration: none;
@@ -67,13 +69,14 @@ section#title {
         float: none;
 
         img {            
-            -webkit-transform-origin: 40% 18%;
-            -moz-transform-origin: 40% 18%;
-            -ms-transform-origin: 40% 18%;
-            transform-origin: 40% 18%;
+            -webkit-transform-origin: 42% 18%;
+            -moz-transform-origin: 42% 18%;
+            -ms-transform-origin: 42% 18%;
+            transform-origin: 42% 18%;
         }
     }
 }
+
 aside {
     width: 400px;
     position: absolute;
@@ -209,15 +212,6 @@ li.location p {
     font-size: 13px;
 }
 
-#content [class^="progress-"] {
-	border-color: @primary-color;
-	margin: 4px 0;
-
-    &:before {
-        background-color: @primary-color;
-    }
-}
-
 ul.stats {
     .clearfix;
 
@@ -244,75 +238,37 @@ ul.stats {
     }
 }
 
-[class^="progress-"] {
-    width: 100px;
-    height: 10px;
-    border: 1px solid #fff;
-    display: inline-block;
-    border-radius: 4px;
-    vertical-align: -1px;
-    float: right;
+article {
+    h4 {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-weight: 100;
 
-    &:before {
-        display: block;
-        content: " ";
-        background: #fff;
-        width: 0%;
-        height: 100%;
+        span:first-child {
+            color: @primary-color;
+        }
+
+        span:last-child {
+            color: lighten(@text-color, 40%);
+        }
     }
 }
 
-.progress-10:before {
-	width: 10%;
-}
-.progress-20:before {
-	width: 20%;	
-}
-.progress-30:before {
-	width: 30%;
-}
-.progress-40:before {
-	width: 40%;
-}
-.progress-50:before {
-	width: 50%;
-}
-.progress-60:before {
-	width: 60%;
-}
-.progress-70:before {
-	width: 70%;
-}
-.progress-80:before {
-	width: 80%;
-}
-.progress-90:before {
-	width: 90%;
-}
-.progress-100:before {
-	width: 100%;
+article.job, article.project {    
+    p {
+        margin: 3px 0;
+        color: lighten(@text-color, 20%);
+    }
 }
 
-article.job h4, article.project h4 {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-weight: 100;
+#work-experience, #projects {
+    li {
+        margin-bottom: 20px;
+    }
 }
-span.company, span.project-name {
-    color: @primary-color;
-}
-span.work-period, span.project-period {
-    color: #777;
-}
-article.job p, article.project p {
-    margin: 3px 0;
-    color: #444;
-}
-#work-experience li, #projects li {
-    margin-bottom: 20px;
-}
+
 span.lead {
-    color: #111;
+    color: @text-color;
 }
 
 #job-details {
@@ -407,3 +363,5 @@ span.lead {
 @-ms-viewport       { width: device-width; }
 @-o-viewport        { width: device-width; }
 @viewport           { width: device-width; }
+
+@import "print";
