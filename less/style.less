@@ -9,6 +9,7 @@
 a {
     color: #fff;
     text-decoration: none;
+    word-break: break-all;
 }
 
 .icon-wrapper {
@@ -317,6 +318,15 @@ span.lead {
 }
 
 @media (max-width: 1280px) {
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #profile p {
+        margin-left: 0;
+    }
+
 	aside {
 		width: 100%;
 		position: static;
@@ -341,10 +351,6 @@ span.lead {
 		display: block;
 	}
 
-    #job-details article a {
-        word-break: break-all;
-    }
-
     #job-details article header h2 {
         font-size: 25px;
         position: static;
@@ -355,6 +361,33 @@ span.lead {
         box-shadow: none;
         left: auto;
         top: auto;
+    }
+
+    .icon-wrapper {
+        width: 55px;
+        height: 55px;
+
+        & > i {
+            font-size: 29px;
+        }
+
+        & + span {
+            vertical-align: -36px;
+        }
+    }
+
+     > h2 {
+    }
+
+    #content > section, #profile, #contact, #professional-skills {
+        &:before {
+            display: none;
+        }
+
+        & > h2 {
+            padding-right: 0;
+            float: none;
+        }
     }
 }
 
